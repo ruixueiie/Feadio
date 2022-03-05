@@ -1,22 +1,22 @@
 # Feadio
 
-## 简介
+## INTRODUCTOIN
 
-+ 一种基于优化神经网络特征嵌入的载体选择式隐写方法Feadio
-+ 具有100%的完备性
-+ 具有极强的抗攻击性
++ Feadio: A selection-based coverless image steganography method based on optimized neural network feature embedding
++ Having 100% completeness
++ Having strong resistance to attack
 
-## 项目结构说明
+## PROJECT ARCHITECTURE
 
-+ main_train.py: 训练模型的代码
-+ main_test.py: 测试模型的代码
-+ arcface_models/: 存放训练好的模型
-+ attacked_images/: 存放三种数据集对应的受攻击图像，[百度网盘链接]( https://pan.baidu.com/s/1eAtBYWhRrtu017z-JN_GOw )  [ptmd] 
-+ images/: 存放CelebA、Glint360K与IJB-C的原始图像，自行下载，结构参考texts/中的位置
-+ texts/: 存放原始图像与受攻击图像的标签文本
-+ tools/: 存放其他代码
++ `main_train.py`: Code for training model.
++ `main_test.py`: Code for testing model. 
++ `tools/`: Folder for storing other codes.
++ `arcface_models/`: Folder for storing trained models.
++ `texts/`: Folder for storing the label text of the original image and the attacked image
++ `images/`: Folder for storing the original images of CelebA, Glint360K and IJB-C. Please download them by yourself, and refer to the location in `texts /` for the structure
++ `attacked_images/`: Folder for storing the attacked images corresponding to the three above datasets. [Baidu Netdisk]( https://pan.baidu.com/s/1eAtBYWhRrtu017z-JN_GOw )  [code: ptmd] 
 
-## 依赖环境
+## DEPENDENCY ENVIRONMENT
 
 ```
 cuda=10.1
@@ -26,12 +26,17 @@ pytorch=1.6.0
 torchvision=0.7.0
 ```
 
-## 其他
-+ OSNA-Face数据集
-  + [百度网盘链接](https://pan.baidu.com/s/1ZiCJdFAVUdOwBgzGPyVkvw)  [7m5e]
+## ACKNOWLEDGEMENT
 
-## 引用
++ We thank [ArcFace](https://github.com/deepinsight/insightface) for their work on high-quality face recognition.
 
-+ 如果论文对您有帮助，请考虑引用我们的文章
+## OTHERS
+
++ OSNA-Face Dataset
+  + [Baidu Netdisk](https://pan.baidu.com/s/1ZiCJdFAVUdOwBgzGPyVkvw)  [code: 7m5e]
+
+## BibTeX
+
++ If this paper/code is helpful to you, please consider quoting our work
 > The paper quote format is coming soon ...
 
